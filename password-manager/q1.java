@@ -36,6 +36,7 @@ class Contact {
             for (byte b : hashBytes) {
                 sb.append(String.format("%02x", b));
             }
+            // Converting String builder to String.
             passwordHash = sb.toString();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
